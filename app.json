@@ -1,0 +1,52 @@
+{
+  "expo": {
+    "name": "Guild Anime",
+    "slug": "guild-anime-app",
+    "scheme": "guildanime",
+    "version": "1.0.0",
+    "orientation": "default",
+    "updates": {
+      "url": "https://u.expo.dev/",
+      "fallbackToCacheTimeout": 0
+    },
+    "assetBundlePatterns": [
+      "**/*"
+    ],
+    "ios": {
+      "supportsTablet": true
+    },
+    "android": {
+      "permissions": [],
+      "package": "com.anonymous.guildanimeapp"
+    },
+    "web": {
+      "bundler": "metro"
+    },
+    "plugins": [
+      "expo-router",
+      "./plugins/with-immersive-android"
+    ],
+    "extra": {
+      "router": {
+        "origin": false
+      },
+      "stripeLinks": {
+        "monthly": "",
+        "yearly": "",
+        "returnUrl": "https://localhost:8081/payment-return"
+      },
+      "auth": {
+        "webRedirectBase": ""
+      },
+      "stripe": {
+        "publishableKey": "pk_test_XXXXXXXXXXXXXXXXXXXXXXXX",
+        "apiBase": ""
+      },
+      "supabase": {
+        "url": "https://test.supabase.co",
+        "anonKey": "Ioasijndoisaiopdhsaihf9asghuiof"
+      }
+    }
+  }
+}
+
