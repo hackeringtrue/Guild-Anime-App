@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width,initial-scale=1,shrink-to-fit=no,viewport-fit=cover" />
+    <meta name="theme-color" content="#000000" />
+    <title>Guild Anime</title>
+    <!-- Global import.meta polyfill for web -->
+    <script>
+      // Define import.meta globally to prevent "Cannot use 'import.meta' outside a module" errors
+      window.importMetaPolyfill = {
+        url: window.location.href,
+        env: {
+          MODE: 'development',
+          DEV: true,
+          PROD: false,
+          SSR: false
+        }
+      };
+
+      // Create a global import.meta if it doesn't exist
+      if (typeof import.meta === 'undefined') {
+        window.import = window.import || {};
+        window.import.meta = window.importMetaPolyfill;
+      }
+    </script>
+    <!-- Expo will inject scripts/styles here -->
+  </head>
+  <body>
+    <noscript>
+      <div style="font-family: system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell, Noto Sans, Helvetica Neue, Arial, 'Apple Color Emoji', 'Segoe UI Emoji'; padding: 16px; line-height: 1.4;">
+        <h2>JavaScript is required</h2>
+        <p>This app needs JavaScript to run. If you just completed a payment and got redirected here, you can continue:</p>
+        <ul>
+          <li><a href="guildanime://payment-return">Return to the app (deep link)</a></li>
+          <li><a href="/payment-return">Continue in the web app</a></li>
+        </ul>
+        <p>If these links don’t work, enable JavaScript or open this page in your system browser.</p>
+      </div>
+    </noscript>
+    <div id="root"></div>
+  </body>
+</html>

@@ -1,0 +1,23 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+	{
+	  "label": "Expo: start",
+	  "type": "shell",
+	  "command": "npx",
+	  "args": ["expo", "start"],
+	  "isBackground": true,
+	  "group": "build",
+	  "problemMatcher": []
+	},
+	{
+	  "label": "Expo: start (web)",
+	  "type": "shell",
+	  "command": "npx",
+	  "args": ["expo", "start", "--web"],
+	  "isBackground": true,
+	  "group": "build",
+	  "problemMatcher": []
+	}
+  ]
+}

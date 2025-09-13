@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Test Page</title>
+    <style>
+        body { font-family: Arial, sans-serif; padding: 20px; }
+        .test { background: purple; color: white; padding: 20px; margin: 20px; border: 3px solid black; }
+    </style>
+</head>
+<body>
+    <div class="test">
+        <h1>🌟 STATIC TEST PAGE 🌟</h1>
+        <p>If you see this, the web server is working!</p>
+        <p>Time: <span id="time"></span></p>
+    </div>
+    <script>
+        document.getElementById('time').textContent = new Date().toLocaleString();
+    </script>
+</body>
+</html>

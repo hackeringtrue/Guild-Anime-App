@@ -1,0 +1,9 @@
+{
+  "root": true,
+  "extends": ["expo", "plugin:react/recommended"],
+  "parserOptions": { "ecmaVersion": 2023, "sourceType": "module" },
+  "rules": {
+    "@typescript-eslint/no-explicit-any": "off",
+    "react/react-in-jsx-scope": "off"
+  }
+}
